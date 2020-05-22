@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New</title>
+	<meta charset="utf-8">
+	<style>
+
+		.grid-container_featured{
+
+			display: inline-grid;
+			grid-template-areas: 'newArea newArea newArea';
+			grid-template-rows: 50px 350px 350px;
+			justify-content: center;
+			grid-column-gap: 15px;
+			grid-row-gap: 5px;
+			background-color: white;
+			margin: 5px 10px 10px 25px;
+			width: 70%;
+		}
+		.grid-item{
+			padding: 10px;
+			box-shadow: 3px 3px 5px #ada8a8;
+			text-align: center;
+		}
+		.grid-item1 {
+  			grid-area: newArea;
+  			font-size: 32px;
+			color: #09373c;
+			font-family: "Gill Sans", sans-serif;
+			margin: 2px;
+			text-align: center;
+		}
+		.grid-item3{
+			grid-row: 2 / 4;
+ 			grid-column: 2 / 3;
+		}
+		.grid-item h4{
+
+			font-size: 20px;
+			font-family: "Gill Sans", sans-serif;
+			margin: 5px;
+			padding: 5px;
+			color: #09373c;
+			text-align: center;
+
+		}
+		.grid-item p{
+
+			margin: 0px;
+			text-align: justify;
+
+		}
+		button{
+
+			display: inline-block;
+			background-color: #0a9ea1;
+			color: white;
+			border-style: none;
+			border-radius: 8px;
+			font-size: 14px;
+			font-family: "Gill Sans", sans-serif;
+			float: right;
+		}
+
+		.grid-container_latest{
+
+			display: inline-grid;
+			grid-template-areas: 'newArea';
+			grid-template-rows: 50px 175px 175px 175px 175px;
+			grid-row-gap: 2px;
+			background-color: white;
+			margin: 5px 10px 10px 5px;
+			width: 20%;
+			/*position: absolute;
+			right: 10px;
+			top: 10px;*/
+			/*box-shadow: 3px 3px 3px #ada8a8;*/
+		}
+		.grid-item_latest{
+			padding: 10px;
+			box-shadow: 3px 3px 5px #ada8a8;
+			text-align: center;
+		}
+		.grid-item_latest1 {
+  			grid-area: newArea;
+  			font-size: 32px;
+			color: #09373c;
+			font-family: "Gill Sans", sans-serif;
+			margin: 2px;
+			text-align: center;
+		}
+		.grid-item_latest h4{
+
+			font-size: 20px;
+			font-family: "Gill Sans", sans-serif;
+			margin: 5px;
+			padding: 5px;
+			color: #09373c;
+			text-align: center;
+
+		}
+		.grid-item_latest p{
+
+			margin: 0px;
+			text-align: justify;
+
+		}
+
+		@media (min-width: 999px){
+
+		.grid-container_latest{
+
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		}
+
+		@media (max-width: 998px){
+
+
+			.grid-container_featured{
+
+			align-items: center;
+			margin: 15px;
+		}
+
+
+		.grid-container_latest{
+
+			margin: 15px;
+			align-items: center;
+		}
+
+
+		}
+
+	</style>
+</head>
+<body>
+
+<!-- Featured -->
+
+	<div class="grid-container_featured">
+		<div class="grid-item1">FEATURED</div>
+		<div class="grid-item">
+
+				<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="200px" width="150px" align="center">
+					
+				<h4>Lorem&nbsp;ipsum</h4>
+
+				<p>
+					
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmor
+
+				</p>
+
+					<button>
+						
+						Start
+
+					</button>
+
+
+		</div>
+		<div class="grid-item">
+
+
+				<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="200px" width="150px" align="center">
+					
+					<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmor
+
+					</p>
+
+					<button>
+						
+						Start
+
+					</button>
+
+
+		</div>
+		<div class=" grid-item grid-item3">
+
+				<img src="https://images.unsplash.com/photo-1546299138-7574176aad1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" height="550px" width="150px" align="center">
+					
+					<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmor
+
+					</p>
+
+					<button>
+						
+						Start
+
+					</button>
+
+		</div>
+		<div class="grid-item">
+
+				<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="200px" width="150px" align="center">
+
+					
+					<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmor
+
+					</p>
+
+					<button>
+						
+						Start
+
+					</button>
+
+		</div>
+		<div class="grid-item">
+			
+				<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="200px" width="150px" align="center">
+					
+					<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmor
+
+					</p>
+
+					<button>
+						
+						Start
+
+					</button>
+
+		</div>
+
+<!-- Latest -->
+
+<div class="grid-container_latest">
+	<div class="grid-item_latest1">LATEST</div>
+
+	<div class="grid-item_latest">
+
+		<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="70px" width="150px" align="center">
+		
+		<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet
+
+					</p>
+
+	</div>
+	<div class="grid-item_latest">
+
+		<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="70px" width="150px" align="center">
+		
+		<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet
+
+					</p>
+
+	</div>
+	<div class="grid-item_latest">
+
+		<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="70px" width="150px" align="center">
+
+		<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet
+					</p>
+		
+
+	</div>
+	<div class="grid-item_latest">
+
+		<img src="https://i.pinimg.com/736x/4b/18/37/4b18374e62fe836fd9d8c5e899a49e60.jpg" height="70px" width="150px" align="center">
+
+		<h4>Lorem&nbsp;ipsum</h4>
+
+					<p>
+					
+					Lorem ipsum dolor sit amet
+
+					</p>
+		
+
+	</div>
+
+</div>
+
+</body>
+</html>
